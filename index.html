@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Space Game - Responsive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="game-header">
+      <h1>Space Invaders</h1>
+      <div class="game-info">
+        <span id="score-display">Score: 0</span>
+        <span id="lives-display">Lives: 3</span>
+      </div>
+    </div>
+    
+    <div class="canvas-container">
+      <canvas id="myCanvas">
+        Your browser does not support the HTML5 canvas tag.
+      </canvas>
+    </div>
+    
+    <!-- Mobile Controls -->
+    <div class="mobile-controls" id="mobileControls">
+      <div class="control-row">
+        <button class="control-btn" id="upBtn">↑</button>
+      </div>
+      <div class="control-row">
+        <button class="control-btn" id="leftBtn">←</button>
+        <button class="control-btn fire-btn" id="fireBtn">🔥</button>
+        <button class="control-btn" id="rightBtn">→</button>
+      </div>
+      <div class="control-row">
+        <button class="control-btn" id="downBtn">↓</button>
+      </div>
+      <div class="control-row">
+        <button class="control-btn start-btn" id="startBtn">START</button>
+      </div>
+    </div>
+    
+    <!-- Instructions -->
+    <div class="instructions">
+      <p><strong>Desktop:</strong> Use arrow keys to move, spacebar to fire, Enter to start</p>
+      <p><strong>Mobile:</strong> Use touch controls below the game</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
